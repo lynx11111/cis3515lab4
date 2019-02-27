@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.TextView;
 
 public class PaletteActivity extends Activity {
 
@@ -19,11 +20,14 @@ public class PaletteActivity extends Activity {
         final String[] colors = res.getStringArray(R.array.Colors);
 
 
-        ColorAdapter colorAdapter = new ColorAdapter(this, colors);
+
+        ColorAdapter colorAdapter = new ColorAdapter(this,colors);
+
 
 
         GridView gridView = findViewById(R.id.gridView);
         gridView.setAdapter(colorAdapter);
+
 
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
