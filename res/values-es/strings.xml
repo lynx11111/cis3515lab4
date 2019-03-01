@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CIS3515Lab4</string>
-    <string-array name="Colors">
+
+    <string-array name="colors" >
+        <item>Magenta</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>Gray</item>
+        <item>Maroon</item>
+        <item>Aqua</item>
+    </string-array>
+
+    <string-array name="colons" >
         <item>Magenta</item>
         <item>Blanco</item>
         <item>Verde</item>
