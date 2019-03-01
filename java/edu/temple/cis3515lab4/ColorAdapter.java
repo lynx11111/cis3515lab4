@@ -8,16 +8,19 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 
 public class ColorAdapter extends BaseAdapter {
     String[] colors;
     Context context;
+    String[] colons;
 
 
-
-    public ColorAdapter(Context context, String[] colors){
+    public ColorAdapter(Context context, String[] colors, String[] colons){
         this.colors = colors;
         this.context = context;
+        this.colons = colons;
 
 
     }
@@ -41,9 +44,27 @@ public class ColorAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        TextView textView = new TextView(context);
-        textView.setText(colors[position]);
-        textView.setBackgroundColor(Color.parseColor(colors[position]));
+
+        TextView textView ;
+        if(convertView instanceof TextView){
+            textView = (TextView)convertView;
+        }
+        else{
+            textView = new TextView(context);
+        }
+
+
+        String setColorText = colors[position];
+        String sacco = colons[position];
+        String setColorBG = colors[position];
+        if (Locale.getDefault().getLanguage().equals("en")){
+            textView.setText(setColorText);
+        }
+        else{
+            textView.setText(sacco);
+        }
+
+        textView.setBackgroundColor(Color.parseColor(setColorBG));
         return textView;
     }
 }

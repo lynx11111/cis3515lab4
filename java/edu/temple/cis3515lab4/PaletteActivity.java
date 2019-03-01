@@ -17,11 +17,11 @@ public class PaletteActivity extends Activity {
         setContentView(R.layout.activity_palette);
 
         Resources res = getResources();
-        final String[] colors = res.getStringArray(R.array.Colors);
+        final String[] colors = res.getStringArray(R.array.colors);
+        final String[] colons = res.getStringArray(R.array.colons);
 
 
-
-        ColorAdapter colorAdapter = new ColorAdapter(this,colors);
+        ColorAdapter colorAdapter = new ColorAdapter(this,colors,colons);
 
 
 
@@ -40,6 +40,7 @@ public class PaletteActivity extends Activity {
 
                 startActivity(intent);
             }
+
         });
     }
 }
