@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">CIS3515Lab4</string>
-    <string-array name="Colors">
+    <string-array name="colors" >
         <item>Magenta</item>
         <item>White</item>
         <item>Green</item>
@@ -12,5 +12,18 @@
         <item>Gray</item>
         <item>Maroon</item>
         <item>Aqua</item>
+    </string-array>
+
+    <string-array name="colons" >
+        <item>Magenta</item>
+        <item>Blanco</item>
+        <item>Verde</item>
+        <item>Rojo</item>
+        <item>Azul</item>
+        <item>Amarillo</item>
+        <item>Negro</item>
+        <item>Gris</item>
+        <item>Granate</item>
+        <item>Agua</item>
     </string-array>
 </resources>
